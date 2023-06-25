@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="QuantamizerCss.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Quantamizer | Encode Your Data</title>
+  </head>
+
+  <body>
+    <div class="container row">
+      <!-- card1 -->
+      <div class="col-md-6">
+        <div class="background">
+          <div class="shape"></div>
+          <div class="shape"></div>
+        </div>
+        <form class="form1">
+          <h3>
+            Welcome To Quantamizer
+            <span>Encode Your Message</span>
+          </h3>
+
+          <label for="msg1">Enter Your Message</label>
+          <input type="text" id="msg1" placeholder="enter your Message" />
+          <label for="code">Your Quantamize Code</label>
+          <textarea
+            name=""
+            id="code"
+            disabled
+            wrap="hard"
+            placeholder="your Quantamize Code"
+          ></textarea>
+
+          <button class="button" onclick="Encode()">Encrypt</button>
+          <button class="button reset" onclick="clear()">Reset</button>
+        </form>
+      </div>
+      <!-- card1 finish -->
+
+      <!-- card2 -->
+      <div class="col-md-6">
+        <div class="background1">
+          <div class="shape1"></div>
+          <div class="shape1"></div>
+        </div>
+        <form>
+          <h3>
+            Welcome To Quantamizer
+            <span>Decode Your Message</span>
+          </h3>
+
+          <label for="msg2">Enter Your Quantamize Code</label>
+          <input
+            type="text"
+            id="msg2"
+            required
+            placeholder="Enter your Quantamize Code"
+          />
+          <label for="msg">Your Message</label>
+          <textarea
+            name="msg"
+            id="message"
+            disabled
+            wrap="hard"
+            placeholder="Your Message"
+          ></textarea>
+
+          <button class="button" onclick="Decode()">Decrypt</button>
+          <button class="button reset" onclick="clear1()">Reset</button>
+        </form>
+      </div>
+      <!-- card2 finish -->
+    </div>
+  </body>
+  <script src="QuantamizerScript.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>
